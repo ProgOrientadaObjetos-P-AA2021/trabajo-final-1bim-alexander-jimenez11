@@ -1,14 +1,32 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package paquetecinco;
 
-/**
- *
- * @author reroes
- */
 public class Constructora {
-    
+
+    //Atributos Constructora
+    private String nombreConstructora;
+    private String identificacionConstructora;
+
+    //Constructor Con Parametros
+    public Constructora(String nombre, String id) {
+        nombreConstructora = nombre;
+        identificacionConstructora = id;
+    }
+
+    //Metodos Establecer (SET)
+    public void establecerNombreConstructora(String nombre) {
+        nombreConstructora = nombre;
+    }
+
+    public void establecerIdentificacionConstructora(String ideconstr) {
+        identificacionConstructora = ideconstr;
+    }
+
+    //Metodos Obtener (GET)
+    public String obtenerNombreConstructora() {
+        return nombreConstructora;
+    }
+
+    public String obtenerIdentificacionConstructora() {
+        return identificacionConstructora;
+    }
 }

@@ -1,14 +1,42 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package paquetedos;
 
-/**
- *
- * @author reroes
- */
 public class Propietario {
-    
+
+    //Atributos Propietario
+    private String nombrePropietario;
+    private String apellidoPropietario;
+    private String identificacionPropietario;
+
+    //Cosntructor con parametros
+    public Propietario(String nombre, String apellido, String identificacion) {
+        nombrePropietario = nombre;
+        apellidoPropietario = apellido;
+        identificacionPropietario = identificacion;
+    }
+
+    //Metodos Establecer (SET)
+    public void establecerNombrePropietario(String nombre) {
+        nombrePropietario = nombre;
+    }
+
+    public void establecerApellidoPropietario(String apellido) {
+        apellidoPropietario = apellido;
+    }
+
+    public void establecerIdentificacionPropietario(String identificacion) {
+        identificacionPropietario = identificacion;
+    }
+
+    //Metodos Obtener (GET)
+    public String obtenerNombrePropietario() {
+        return nombrePropietario;
+    }
+
+    public String obtenerApellidoPropietario() {
+        return apellidoPropietario;
+    }
+
+    public String obtenerIdentificacionPropietario() {
+        return identificacionPropietario;
+    }
 }

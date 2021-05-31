@@ -1,14 +1,31 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package paquetecuatro;
 
-/**
- *
- * @author reroes
- */
-public class Ciudad {
+public class Ciudad 
+{
+    private String nombreCiudad;
+    private String nombreProvincia;
     
+    //Constructor con parametros
+    public Ciudad(String nombre, String provincia) {
+        nombreCiudad = nombre;
+        nombreProvincia = provincia;
+    }
+    
+    //Metodos Establecer (SET)
+    public void establecerNombreCiudad(String n) {
+        nombreCiudad = n;
+    }
+
+    public void establecerNombreProvincia(String n) {
+        nombreProvincia = n;
+    }
+    
+    //Metodos Obtener (GET)
+    public String obtenerNombreCiudad() {
+        return nombreCiudad;
+    }
+
+    public String obtenerNombreProvincia() {
+        return nombreProvincia;
+    }
 }
